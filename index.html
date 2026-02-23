@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A redirecionar para o Painel...</title>
+    
+    <meta http-equiv="refresh" content="0; url=http://31.6.7.87:25579">
+    
+    <script>
+        // O "replace" apaga esta página do histórico, para a pessoa não ficar 
+        // presa num loop se clicar na seta de voltar para trás no browser!
+        window.location.replace("http://31.6.7.87:25579");
+    </script>
+
+    <style>
+        /* Estilos para manter a "Aura" do teu painel caso demore a carregar */
+        body {
+            background-color: #0f1014;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .loader {
+            border: 4px solid #1a1b20;
+            border-top: 4px solid #00d4ff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 
+            0% { transform: rotate(0deg); } 
+            100% { transform: rotate(360deg); } 
+        }
+        .btn {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background: #1a1b20;
+            border-radius: 8px;
+            border: 1px solid #2a2b30;
+            transition: 0.2s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #00d4ff;
+            color: #000;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    
+    <h2>A ligar aos servidores... ⚡</h2>
+    <p style="color: #888888;">Vais ser redirecionado num instante.</p>
+    
+    <a href="http://31.6.7.87:25579" class="btn">Não funcionou? Clique aqui!</a>
+</body>
+</html>
